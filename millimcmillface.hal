@@ -143,4 +143,4 @@ net estop-loop iocontrol.0.user-enable-out => iocontrol.0.emc-enable-in
 net power_on halui.machine.is-on => hm2_7i96.0.ssr.00.out-00
 
 # E-Stop
-net estop hm2_7i96.0.gpio.010.in_not => halui.estop.activate
+net estop hm2_7i96.0.gpio.008.in_not => halui.estop.activate
