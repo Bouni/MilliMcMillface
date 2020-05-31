@@ -27,3 +27,9 @@ net min-limit-home-joint-1 joint.1.home-sw-in
 net max-limit-joint-2 joint.2.pos-lim-sw-in         <= hm2_7i96.0.gpio.004.in_not
 net min-limit-home-joint-2 joint.2.neg-lim-sw-in    <= hm2_7i96.0.gpio.005.in_not
 net min-limit-home-joint-2 joint.2.home-sw-in
+
+# E-Stop
+net estop halui.estop.activate                      <= hm2_7i96.0.gpio.008.in_not
+
+# Power on Relay
+net power_on halui.machine.is-on                    => hm2_7i96.0.ssr.00.out-00

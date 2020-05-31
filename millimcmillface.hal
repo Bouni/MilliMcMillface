@@ -135,12 +135,6 @@ setp pid.2.maxerror [JOINT_2]MAX_ERROR
 #setp hm2_7i96.0.pwmgen.00.scale [SPINDLE]MAX_RPM
 #setp hm2_7i96.0.pwmgen.pwm_frequency [SPINDLE]PWM_FREQUENCY
 
-# Standard I/O Block - EStop, Etc
 # create a signal for the estop loopback
 net estop-loop iocontrol.0.user-enable-out => iocontrol.0.emc-enable-in
 
-# Power on Relay
-net power_on halui.machine.is-on => hm2_7i96.0.ssr.00.out-00
-
-# E-Stop
-net estop hm2_7i96.0.gpio.008.in_not => halui.estop.activate
