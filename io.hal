@@ -7,8 +7,8 @@
 # hm2_7i96.0.gpio.001 : Axis X Negativ Limit Switch
 # hm2_7i96.0.gpio.002 : Axis Y Positiv Limit Switch
 # hm2_7i96.0.gpio.003 : Axis Y Negativ Limit Switch
-# hm2_7i96.0.gpio.004 : Axis Z Positiv Limit Switch
-# hm2_7i96.0.gpio.005 : Axis Z Negativ Limit Switch
+# hm2_7i96.0.gpio.004 : Axis Z Negativ Limit Switch
+# hm2_7i96.0.gpio.005 : Axis Z Positiv Limit Switch
 # hm2_7i96.0.gpio.006 : 
 # hm2_7i96.0.gpio.007 : 
 # hm2_7i96.0.gpio.008 : E-Stop feedback 
@@ -24,8 +24,8 @@ net min-limit-home-joint-1 joint.1.neg-lim-sw-in    <= hm2_7i96.0.gpio.003.in_no
 net min-limit-home-joint-1 joint.1.home-sw-in
 
 # Z Axis Limit / Home switches
-net max-limit-joint-2 joint.2.pos-lim-sw-in         <= hm2_7i96.0.gpio.004.in_not
-net min-limit-home-joint-2 joint.2.neg-lim-sw-in    <= hm2_7i96.0.gpio.005.in_not
+net max-limit-joint-2 joint.2.pos-lim-sw-in         <= hm2_7i96.0.gpio.005.in_not
+net min-limit-home-joint-2 joint.2.neg-lim-sw-in    <= hm2_7i96.0.gpio.004.in_not
 net min-limit-home-joint-2 joint.2.home-sw-in
 
 # E-Stop
