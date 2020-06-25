@@ -19,14 +19,14 @@ net min-limit-home-joint-0 joint.0.neg-lim-sw-in    <= hm2_7i96.0.gpio.001.in_no
 net min-limit-home-joint-0 joint.0.home-sw-in
 
 # Y Axis Limit / Home switches
-net max-limit-joint-1 joint.1.pos-lim-sw-in         <= hm2_7i96.0.gpio.002.in_not
-net min-limit-home-joint-1 joint.1.neg-lim-sw-in    <= hm2_7i96.0.gpio.003.in_not
-net min-limit-home-joint-1 joint.1.home-sw-in
+net max-limit-home-joint-1 joint.1.pos-lim-sw-in    <= hm2_7i96.0.gpio.002.in_not
+net max-limit-home-joint-1 joint.1.home-sw-in
+net min-limit-joint-1 joint.1.neg-lim-sw-in         <= hm2_7i96.0.gpio.003.in_not
 
 # Z Axis Limit / Home switches
-net max-limit-home-joint-2 joint.2.pos-lim-sw-in    <= hm2_7i96.0.gpio.005.in_not
-net min-limit-joint-2 joint.2.neg-lim-sw-in         <= hm2_7i96.0.gpio.004.in_not
+net max-limit-home-joint-2 joint.2.pos-lim-sw-in    <= hm2_7i96.0.gpio.004.in_not
 net max-limit-home-joint-2 joint.2.home-sw-in
+net min-limit-joint-2 joint.2.neg-lim-sw-in         <= hm2_7i96.0.gpio.005.in_not
 
 # E-Stop
 net estop halui.estop.activate                      <= hm2_7i96.0.gpio.008.in_not
@@ -34,4 +34,4 @@ net estop halui.estop.activate                      <= hm2_7i96.0.gpio.008.in_no
 # Power on Master Contactor
 net power_on halui.machine.is-on                    => hm2_7i96.0.ssr.00.out-00
 # Power on VFD + Watercooling Pump Contactor
-net power_on                                        => hm2_7i96.0.ssr.00.out-01
+# net power_on                                        => hm2_7i96.0.ssr.00.out-01
