@@ -34,4 +34,4 @@ net estop halui.estop.activate                      <= hm2_7i96.0.gpio.008.in_no
 # Power on Master Contactor
 net power_on halui.machine.is-on                    => hm2_7i96.0.ssr.00.out-00
 # Power on VFD + Watercooling Pump Contactor
-# net power_on                                        => hm2_7i96.0.ssr.00.out-01
+net power_on                                        => hm2_7i96.0.ssr.00.out-01
